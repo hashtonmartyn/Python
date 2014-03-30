@@ -25,7 +25,7 @@
 ;;****************************************************
 
 (def shell (load/node-module "shelljs"))
-(def py-path (files/join plugins/*plugin-dir* "py-src/ltmain.py"))
+(def py-path (files/join plugins/*plugin-dir* "py_src/ltmain.py"))
 
 (behavior ::on-out
                   :triggers #{:proc.out}

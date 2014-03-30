@@ -42,7 +42,7 @@ goog.require('lt.objs.editor');
 
 lt.plugins.python.shell = lt.util.load.node_module.call(null,"shelljs");
 
-lt.plugins.python.py_path = lt.objs.files.join.call(null,lt.objs.plugins._STAR_plugin_dir_STAR_,"py-src/ltmain.py");
+lt.plugins.python.py_path = lt.objs.files.join.call(null,lt.objs.plugins._STAR_plugin_dir_STAR_,"py_src/ltmain.py");
 
 lt.plugins.python.__BEH__on_out = (function __BEH__on_out(this$,data){var out = data.toString();lt.object.update_BANG_.call(null,this$,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"buffer","buffer",3930752946)], null),cljs.core.str,out);
 if((out.indexOf("Connected") > -1))
